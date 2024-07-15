@@ -1,14 +1,31 @@
-﻿namespace OOP_03
+﻿using OOP_03.overriding;
+
+namespace OOP_03
 {
     internal class Program
     {
         static void Main(string[] args)
         {
+            #region polymorphism via overloading
+            // multiply(5, 2, 1);
+            #endregion
 
-            /// 
-            multiply(5, 2, 1);
+            #region polymorphism via overloading
+                type_A type_a = new type_A(5);
+                type_a.A = 10;
+                type_a.Fun_1();
+                type_a.Fun_2();
 
-            
+                Console.WriteLine("-----------------------");
+
+                type_B type_b = new type_B(5,10);
+                type_b.A = 8;
+                type_b.B = 17;
+                type_b.Fun_1();
+                type_b.Fun_2();
+            #endregion
+
+
         }
 
         #region polymorphism via overloading
