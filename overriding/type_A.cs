@@ -23,5 +23,10 @@ namespace OOP_03.overriding
         {
             Console.WriteLine($"Type_A variable equal {A}");
         }
+
+        public virtual void Fun_3()
+        {
+            Console.WriteLine("This function special for class type_A");
+        }
     }
 }
